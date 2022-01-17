@@ -1,21 +1,21 @@
 const generateLicenseBadge = licenseData => {
   switch(licenseData){
     case "Apache 2.0":
-      return "[License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+      return "[![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)";
     case "BSD 3-Clause":
-      return "[License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+      return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-orange.svg)](https://opensource.org/licenses/BSD-3-Clause)";
     case "BSD 2-Clause":
-      return "[License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+      return "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)";
     case "GPL":
-      return "[License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
     case "LGPL":
-      return "[License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+      return "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)";
     case "MIT":
-      return "[License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
     case "Mozilla":
-      return "[License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+      return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
     case "Eclipse":
-      return "[License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+      return "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)";
   }
 }
 
