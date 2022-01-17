@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const generateMarkup = require("./utils/generateMarkup");
+const generateMarkup = require("./utils/generateMarkdown");
 const writeFile = require("./utils/generateReadme");
 
 const questions = [
