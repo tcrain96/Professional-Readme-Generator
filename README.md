@@ -5,8 +5,10 @@
   ## Description
   This is a test project
   
+  [Installation](#installation)
+  
   ## Table of Contents
-    [Installation](#installation)
+    
     * [Usage](#usage)
     * [License](#license)
     * [Contributing](#contributing)
