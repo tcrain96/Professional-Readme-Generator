@@ -6,7 +6,7 @@
   This is a test project
   
   ## Table of Contents
-    * [Installation](#installation)
+    [Installation](#installation)
     * [Usage](#usage)
     * [License](#license)
     * [Contributing](#contributing)
