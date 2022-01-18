@@ -3,14 +3,14 @@ const generateMarkup = require("./utils/generateMarkdown");
 const writeFile = require("./utils/generateReadme");
 
 const questions = [
-    "What is your name? (Required)",
+    "What is your email address? (Required)",
     "What is your GitHub username? (Required)",
-    "What is the name of your project? (Required)",
+    "What is the name of your application? (Required)",
     "Please provide a short description of you application. (Required)",
     "Please explain how to install your application (Required)",
     "Please give a brief explanation of your applications usage (Required)",
     "Please select the liscence associated with your application. (Required)",
-    "Please tell me who else contributed to this project",
+    "Please tell me your guidelines for other developers to contribute to your application. (Required)",
     "Please explain how to test your application. (Required)",
 ];
 
@@ -18,14 +18,14 @@ const promptReadme = readmeData =>{
     return inquirer.prompt([
         {
             type:"input",
-            name: "userName",
+            name: "email",
             message: questions[0],
-            validate:userName =>{
-                if(userName){
+            validate:email =>{
+                if(email){
                     return true;
                 }
                 else{
-                    console.log("You need to enter a name!");
+                    console.log("You need to enter your email!");
                     return false;
                 }
             }
@@ -110,6 +110,15 @@ const promptReadme = readmeData =>{
             type:"input",
             name: "contributing",
             message: questions[7],
+            validate:usage =>{
+                if(usage){
+                    return true;
+                }
+                else{
+                    console.log("You need to explain how people can contribute to your application!");
+                    return false;
+                }
+            }
         },
         {
             type:"input",
