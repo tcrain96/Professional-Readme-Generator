@@ -3,7 +3,7 @@
 
   # Professional Readme Generator
   
-  # [Watch Walkthrough Here](https://watch.screencastify.com/v/MrZJSfeUq8bd5EkK3KP9)
+  [Watch Walkthrough Here](https://watch.screencastify.com/v/MrZJSfeUq8bd5EkK3KP9)
   
   ## Description
   My application creates a README file based on the data entered by a user
