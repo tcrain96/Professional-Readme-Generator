@@ -1,7 +1,9 @@
+//Required Variables
 const inquirer = require("inquirer");
 const generateMarkup = require("./utils/generateMarkdown");
 const writeFile = require("./utils/generateReadme");
 
+//User Questions
 const questions = [
     "What is your email address? (Required)",
     "What is your GitHub username? (Required)",
@@ -14,6 +16,7 @@ const questions = [
     "Please explain how to test your application. (Required)",
 ];
 
+//Logic for asking users questions as well as storing the user input data
 const promptReadme = readmeData =>{
     return inquirer.prompt([
         {
@@ -138,6 +141,7 @@ const promptReadme = readmeData =>{
     ]);
 };
 
+//Prompt the user for data, then generate the markup with that data, then create a readme file and fill it with that data
 promptReadme()
     .then(readmeData => {
         return generateMarkup(readmeData);

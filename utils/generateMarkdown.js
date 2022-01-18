@@ -1,5 +1,7 @@
+//Empty license details to be filled once license data is read
 let licenseDetail = "";
 
+//Generate a license badge based on the data that has been given by the user
 const generateLicenseBadge = licenseData => {
   switch(licenseData){
     case "Apache 2.0":
@@ -29,6 +31,7 @@ const generateLicenseBadge = licenseData => {
   }
 }
 
+//Export the Markup once it has been created with the user data
 module.exports = readmeData => {
   return`
   ${generateLicenseBadge(readmeData.licences)}
@@ -68,9 +71,11 @@ module.exports = readmeData => {
   If you have any questions for me, I would love to hear from you via email or through GitHub.
   
   ###Email
+
   [${readmeData.email}](mailto:${readmeData.email})
 
   ###GitHub
+
   [${readmeData.github}](https://github.com/${readmeData.github})
   `
 };

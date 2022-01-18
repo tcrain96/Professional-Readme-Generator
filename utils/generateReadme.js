@@ -1,6 +1,7 @@
+//Required variables
 const fs = require('fs');
 
-// writing files
+//Create the file based on the Markup given, and add it to the same folder index is found in. 
 const writeFile = fileContent => {
   return new Promise((resolve, reject) => {
     fs.writeFile('README.md', fileContent, err => {
@@ -9,10 +10,8 @@ const writeFile = fileContent => {
         return;
       }
 
-      resolve({
-        ok: true,
-        message: 'File created!'
-      });
+      resolve(console.log("README file has been created and added to your folder!"));
+
     });
   });
 };
