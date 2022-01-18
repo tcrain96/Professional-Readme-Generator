@@ -70,11 +70,11 @@ module.exports = readmeData => {
   
   If you have any questions for me, I would love to hear from you via email or through GitHub.
   
-  ###Email
+  ### Email
 
   [${readmeData.email}](mailto:${readmeData.email})
 
-  ###GitHub
+  ### GitHub
 
   [${readmeData.github}](https://github.com/${readmeData.github})
   `
